@@ -1,0 +1,46 @@
+.owl-nav .owl-next,
+.owl-nav .owl-prev {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 100% !important;
+    background: #FF6B66 !important;
+    position: absolute;
+}
+
+.owl-nav .owl-prev {
+    top: 40%;
+    left: 0;
+    transform: translate(-150%, -50%);
+}
+
+.owl-nav .owl-next {
+    top: 40%;
+    right: 0;
+    transform: translate(150%, -50%);
+}
+
+.owl-nav .owl-next:active,
+.owl-nav .owl-prev:active {
+    background-color: #FF6B99 !important;
+}
+
+/* =========================
+   OWL DOTS
+========================= */
+.owl-dot span {
+    display: block;
+    margin-top: 40px !important;
+    width: 14px !important;
+    height: 14px !important;
+    background: #ffffff !important;
+    border-radius: 50%;
+}
+
+.owl-dot.active span {
+    background-color: #FF6B66 !important;
+}
+
+

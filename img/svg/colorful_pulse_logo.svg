@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="140" viewBox="0 0 380 140">
+  <defs>
+    <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4B91" />
+      <stop offset="50%" stop-color="#FF7A00" />
+      <stop offset="100%" stop-color="#FFD600" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <path d="M10 70 
+           L60 70 
+           L90 25 
+           L125 115 
+           L155 40 
+           L185 70 
+           L240 70 
+           L270 20
+           L300 70
+           L370 70"
+        stroke="url(#pulseGradient)"
+        stroke-width="10"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#glow)" />
+  <circle cx="90" cy="25" r="8" fill="url(#pulseGradient)" filter="url(#glow)" />
+</svg>
