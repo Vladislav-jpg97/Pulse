@@ -58,6 +58,10 @@ window.addEventListener("DOMContentLoaded", () => {
                             <p>${item.two}</p>
                             <p class="text-start text-[#ff5100] font-small text-[30px]">${item.titleThree}</p>
                             <p>${item.three}</p>
+                            <a data-aos="fade-up" data-aos-duration="2000" class=" py-[10px] px-[25px] rounded-[15px] border-2 border-[#FF6A00] 
+                                                text-[#ff5100] font-bold text-[20px] 
+                                                hover:bg-[#FF6A00] hover:text-black hover:shadow-[0_0_30px_#FF6A00] 
+                                                transition-all duration-700" href="${item.video}" target="_blank">Видео</a>
                         </div>
                     </div>
                 </li>

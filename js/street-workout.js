@@ -54,27 +54,36 @@ window.addEventListener("DOMContentLoaded", () => {
                 <li class="flex flex-col border-2 rounded-[20px] border-[#FF6A00] 
                             hover:shadow-[0_0_50px_#FF6B66] hover:scale-[1.01] 
                             transition-all duration-2000 py-[80px] px-[40px]"
-                    data-aos="fade-up" data-aos-duration="2500">
+                    data-aos="fade-up" data-aos-duration="2000">
                     
-                    <h3 class="text-center text-[#ff5100] font-bold text-[60px] mb-[60px]">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" class="text-center text-[#ff5100] font-bold text-[60px] mb-[60px]">
                         ${item.name}
                     </h3>
                     
                     <div class="flex justify-center items-center space-x-[80px]">
-                        <div class="w-[500px] h-[300px] overflow-hidden rounded-lg">
+                        <div data-aos="fade-up" data-aos-duration="2000" class="w-[500px] h-[300px] overflow-hidden rounded-lg">
                             <img class="w-full h-full object-cover" src="${item.img}" alt="${item.name}">
                         </div>
-                        <div class="w-[500px] space-y-[15px] text-[#FF6A99]">
+                        
+                        <div data-aos="fade-up" data-aos-duration="2000" class="w-[500px] space-y-[25px] text-[#FF6A99]">
                             
-                            <p class="text-start text-[#ff5100] font-small text-[30px]">${item.titleOne}</p>
-                            <p>${item.one}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" class="text-start text-[#ff5100] font-small text-[30px]">${item.titleOne}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" >${item.one}</p>
 
-                            <p class="text-start text-[#ff5100] font-small text-[30px]">${item.titleTwo}</p>
-                            <p>${item.two}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" class="text-start text-[#ff5100] font-small text-[30px]">${item.titleTwo}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" >${item.two}</p>
 
-                            <p class="text-start text-[#ff5100] font-small text-[30px]">${item.titleThree}</p>
-                            <p>${item.three}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" class="text-start text-[#ff5100] font-small text-[30px]">${item.titleThree}</p>
+                            <p data-aos="fade-up" data-aos-duration="2000" >${item.three}</p>
+
+                            <a data-aos="fade-up" data-aos-duration="2000" class=" py-[10px] px-[25px] rounded-[15px] border-2 border-[#FF6A00] 
+                                                text-[#ff5100] font-bold text-[20px] 
+                                                hover:bg-[#FF6A00] hover:text-black hover:shadow-[0_0_30px_#FF6A00] 
+                                                transition-all duration-700" href="${item.video}" target="_blank">Видео</a>
+
                         </div>
+                        
+
                     </div>
                 </li>
                 `

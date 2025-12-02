@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/global.css">
-    
 
 </head>
 
@@ -52,95 +51,46 @@
                     <a href="./gym-market.html"
                         class="w-[60px] block hover:shadow-[0_0_15px_#FF6A00] transition-shadow">
                         <img src="./img/svg/shop.svg" alt="магазин" class="w-full block">
-                        
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- SECTION 1 -->
 
 
-    <!-- CART SECTION -->
+    <!-- GYM SECTION -->
     <section data-aos="fade-up" data-aos-duration="2000">
-        <div class="container mx-auto px-[40px] my-[60px]">
+        <div class="container mx-auto px-[40px] py-[10px]">
 
-            <div
-                class="border-2 rounded-[20px] border-[#FF6A00] hover:shadow-[0_0_50px_#FF6B66] hover:scale-[1.01] transition-all duration-1000 py-[60px] px-[40px] max-w-[900px] mx-auto bg-black/40 backdrop-blur-md">
+            <div class="flex flex-col border-2 rounded-[20px] border-[#FF6A00] 
+                   hover:shadow-[0_0_50px_#FF6B66] hover:scale-[1.01] 
+                   transition-all duration-1000 py-[80px] my-[60px] px-[20px] sm:px-[40px]">
 
-                <!-- Title -->
-                <h2 class="text-[40px] font-bold text-[#ff5100] text-center pb-[40px]">
-                    Корзина
-                </h2>
+                <h3 data-aos="fade-up" data-aos-duration="2000"
+                    class="text-center text-[#ff5100] font-bold text-[30px] sm:text-[40px] mb-[40px]">
+                    Супер тренировка в зале
+                </h3>
 
-                <!-- CART ITEMS -->
-                <div id="js-cart-item" class="space-y-[25px]">
+                <div data-aos="fade-up" data-aos-duration="2000" class="flex justify-center">
 
-                    <!-- Example Cart Item -->
+                    <!-- Адаптивный контейнер видео -->
                     <div
-                        class="flex items-center justify-between p-[20px] border border-[#FF6A00] rounded-[15px] bg-black/30 hover:shadow-[0_0_20px_#FF6A00] transition-all duration-500">
-
-                        <div class="flex items-center space-x-[20px]">
-                            <img src="" alt="product" class="w-[120px] h-[100px] object-cover rounded-[10px]">
-
-                            <div>
-                                <h3 class="text-white text-[20px] font-bold">Название товара</h3>
-                                <p class="text-[#ff5100] text-[18px]">23 000 сум</p>
-                            </div>
-                        </div>
-
-                        <!-- Qty -->
-                        <div class="flex items-center space-x-[10px]">
-
-                            <button
-                                class="w-[35px] h-[35px] flex justify-center items-center text-[#ff5100] border border-[#FF6A00] rounded-[10px] hover:bg-[#FF6A00] hover:text-black transition-all duration-500">
-                                -
-                            </button>
-
-                            <span class="text-white text-[18px]">1</span>
-
-                            <button
-                                class="plus w-[35px] h-[35px] flex justify-center items-center text-[#ff5100] border border-[#FF6A00] rounded-[10px] hover:bg-[#FF6A00] hover:text-black transition-all duration-500">
-                                +
-                            </button>
-
-                            <!-- Remove -->
-                            <button
-                                class="text-red-500 text-[25px] hover:text-white transition-all duration-500 font-bold">
-                                ×
-                            </button>
-                        </div>
-
-
-
+                        class="w-full max-w-[800px] aspect-video rounded-[20px] overflow-hidden shadow-lg border-2 border-[#FF6A00]">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/j9xS35GI3N4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
                     </div>
 
                 </div>
-
-                <!-- TOTAL PRICE -->
-                <aside id="js-aside" class="mt-[40px] text-center">
-                    <p class="text-white text-[22px]">Кол-во Товара:</p>
-                    <p id="cart-total" class="text-[#ff5100] text-[30px] font-bold mt-[10px]">
-                        23
-                    </p>
-                    <p class="text-white text-[22px]">Общаяя Сумма</p>
-                    <p id="cart-total" class="text-[#ff5100] text-[30px] font-bold mt-[10px]">
-                        23 000 сум
-                    </p>
-
-                    <!-- BUY BUTTON -->
-                    <button
-                        class="mt-[30px] py-[15px] px-[40px] rounded-[15px] border-2 border-[#FF6A00] text-[#ff5100] font-bold text-[20px] hover:bg-[#FF6A00] hover:text-black hover:shadow-[0_0_30px_#FF6A00] transition-all duration-700">
-                        Оформить заказ
-                    </button>
-                </aside>
 
             </div>
 
         </div>
     </section>
-
-
 
 
     <!-- FOOTER -->
@@ -169,12 +119,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
 
     <script src="./libs/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
-    <script src="./data/data.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/cart.js"></script>
-
-
 
 
 
